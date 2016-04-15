@@ -62,4 +62,17 @@ Verify and flash the code on your Photon. Code output is shown in logs at dashbo
 
 https://dashboard.particle.io/user/logs
 
+
+## C
+
+Download (or git pull) the code in Beaglebone Black.
+
+Compile the c program.
+```cpp
+$>gcc VCNL4010.c -o VCNL4010
+```
+Run the c program.
+```cpp
+$>./VCNL4010
+```
 #####The code output is the proximity and lux value of ambient light.
