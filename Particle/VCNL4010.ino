@@ -10,7 +10,7 @@
 // VCNL4010 I2C address is 0x13(19)
 #define Addr 0x13
 
-double luminance = 0, proximity = 0;
+double luminance = 0.0, proximity = 0.0;
 void setup()
 {
     // Set variable
@@ -82,6 +82,7 @@ void loop()
     
     // Output data to dashboard
     Particle.publish("Ambient Light luminance :", String(luminance));
+    delay(1000);
     Particle.publish("Proximity of the device :", String(proximity));
     delay(1000);
 }
